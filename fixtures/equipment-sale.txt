@@ -1,0 +1,9 @@
+SYNTHETIC DEMONSTRATION AGREEMENT - NOT FOR SIGNATURE
+
+1. Parties and asset. The buyer purchases demonstration device DEMO-001 from the seller.
+2. Payment. The buyer deposits exactly 0.01 test ETH into escrow after both parties approve the same terms hash.
+3. Delivery. The delivery deadline is the UNIX timestamp recorded in the approved terms.
+4. Acceptance. The designated independent inspector confirms acceptance of DEMO-001 before the delivery deadline. Evidence must refer to the approved terms and remain unexpired and no more than one hour old when submitted. Valid acceptance releases the escrow balance to the seller.
+5. Dispute. Either party may freeze a funded escrow before settlement. The designated arbitrator may release the whole balance to the seller or refund the whole balance to the buyer. There is no automatic refund while a dispute is active.
+6. Refund. If no acceptance has settled the escrow and no dispute is active, the buyer may claim a full refund at or after the delivery deadline.
+7. Scope. This synthetic demo represents payment mechanics only. It makes no representation about legal title, governing law, enforceability, warranties, or the real condition of any physical asset.

@@ -1,0 +1,37 @@
+{
+  "name": "accord-ledger",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Source-linked agreement terms and evidence-gated escrow for BLI Legal Tech Hackathon 2.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit && tsc -p cre/evidence-check/tsconfig.json --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "demo": "tsx scripts/demo.ts",
+    "compile": "tsx scripts/compile.ts",
+    "check": "npm run typecheck && npm test && npm run compile && npm run demo",
+    "cre:fixture": "tsx scripts/cre-fixture.ts",
+    "cre:build": "bun node_modules/@chainlink/cre-sdk/bin/cre-compile.ts cre/evidence-check/main.ts artifacts/evidence-check.wasm",
+    "cre:simulate": "cre workflow simulate ./cre/evidence-check --target local-settings --non-interactive --trigger-index 0"
+  },
+  "dependencies": {
+    "@chainlink/cre-sdk": "1.23.0",
+    "ethers": "6.17.0",
+    "viem": "2.57.3",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "hardhat": "3.18.1",
+    "solc": "0.8.37",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "tmp": "0.2.7"
+  }
+}

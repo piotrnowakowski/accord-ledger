@@ -1,0 +1,5 @@
+# Local synthetic EVM uses Sepolia's chain ID for CRE routing. This is NOT public Sepolia.
+local-settings:
+  rpcs:
+    - chain-name: ethereum-testnet-sepolia
+      url: http://127.0.0.1:8545

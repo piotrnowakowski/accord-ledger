@@ -1,0 +1,7 @@
+local-settings:
+  user-workflow:
+    workflow-name: accord-evidence-local
+  workflow-artifacts:
+    workflow-path: ./main.ts
+    config-path: ./config.local.json
+    secrets-path: ""

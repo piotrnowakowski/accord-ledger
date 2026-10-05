@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.tools/
+artifacts/
+coverage/
+dist/
+*.wasm
+*.log
+project.local.yaml
+cre/evidence-check/config.local.json
+.DS_Store
